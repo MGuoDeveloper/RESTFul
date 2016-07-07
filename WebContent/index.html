@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RestFul Web Service</title>
+<link data-require="bootstrap@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<script data-require="angular.js@1.5.3" data-semver="1.5.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.4.2/angular-route.js" data-semver="1.4.2" data-require="angular-route@1.4.2"></script>
+<script src="js/xml2json.min.js"></script>
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/script.js"></script>
+</head>
+<body ng-app="app" ng-controller="homectrl">
+  <div class="container">
+    <div class="row">
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th><a href="#/conversion">Feet Inch Conversion</a></th>
+          <th><a href="#/studentservice">Student Service</a></th>
+        </tr>
+      </table>
+      <div ng-view></div>
+    </div>
+  </div>
+</body>
+</html>

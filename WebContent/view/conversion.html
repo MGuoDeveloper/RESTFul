@@ -1,0 +1,16 @@
+<div>
+	<div>
+		<label>Inch: </label><input type="text" ng-model="inch" />
+		<button id="inch_btn" ng-click="convertofeet(inch)">Convert
+			to Feet</button>
+			<a href="/RestFulDemo/rest/ConversionService/InchToFeet/{{inch}}">XML</a>
+		<br /> <label>Feet: </label><input type="text" ng-model="feet" />
+		<button id="inch_btn" ng-click="convertoinch(feet)">Convert
+			to Inch</button>
+			<a href="/RestFulDemo/rest/ConversionService/FeetToInch/{{feet}}">XML</a>
+	</div>
+	<div id="show_rs">
+		<span>Result: </span>
+		<span ng-bind="feet_result"></span><br /> <span ng-bind="inch_result"></span>
+	</div>
+</div>
